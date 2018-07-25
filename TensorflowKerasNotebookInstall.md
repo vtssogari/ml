@@ -14,3 +14,8 @@
 ## Install Notebook
 8. python3 -m pip install jupyter
 9. jupyter notebook
+
+
+## Docker Version
+1. docker pull jupyter/tensorflow-notebook
+2. docker run --name tensorflow -d -p 8888:8888 jupyter/tensorflow-notebook
