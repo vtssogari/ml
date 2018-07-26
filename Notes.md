@@ -27,7 +27,7 @@
 ### Apply the model to testing set
 
 ### Compare the accuracy
- 
+```
 import numpy as np
 import cv2
 
@@ -49,3 +49,4 @@ while(True):
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
+```
