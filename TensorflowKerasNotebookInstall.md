@@ -1,7 +1,7 @@
 # ml
 ## mac
 
-###Install & Update Homebrew
+### Install & Update Homebrew
 1. /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 2. brew update
 3. brew tap brewsci/bio
