@@ -7,6 +7,7 @@
 4. (tensorflow)$
 5. (tensorflow)$ easy_install -U pip
 6. (tensorflow)$ pip3 install --upgrade tensorflow-gpu
+7. (tensorflow)$ pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.9.0-py3-none-any.whl 
 
 ## Install Keras 
 7. pip install keras
