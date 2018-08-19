@@ -1,11 +1,11 @@
 Install OpenCV, numpy, tensorflow
 In the terminal,
-pip install -y opencv-contrib-python
+pip install opencv-contrib-python
 conda install -y numpy
 conda install -y cython
 python -m pip install --upgrade pip
-pip install -y tensorflow
-pip install -y matplotlib
+pip install tensorflow
+pip install matplotlib
 #install kernel
 pip install ipykernel
 python -m ipythonkernel install --user --name=dl
