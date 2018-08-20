@@ -15,7 +15,7 @@ LABEL_DICT =  {
 
 def createTFRecord(label, file_path, filename):
     img = cv2.imread(file_path)
-    height, width = img.shape
+    height, width, channel = img.shape
     filename = filename.encode()
     with tf.gfile.GFile(file_path, 'rb') as fid:
         encoded_image = fid.read()
@@ -27,7 +27,7 @@ def createTFRecord(label, file_path, filename):
     xmaxs = [1]
     ymaxs = [1]
 
-    classes_text = [label]
+    classes_text = [label.encode()]
     classes = [int(LABEL_DICT[label])]
 
     tf_example = tf.train.Example(features=tf.train.Features(feature={
@@ -47,36 +47,29 @@ def createTFRecord(label, file_path, filename):
     return tf_example
 
 # convert image to tfrecord
-def createTFRecords(image_directory, label, output_path):
+def createTFRecords(image_directory, label):
     pathlist = Path(image_directory).glob('**/*.png')
-    writer = tf.python_io.TFRecordWriter(output_path)
-    len_pathlist = len(pathlist)
-    counter = 0
     for path in pathlist:
         path_in_str = str(path)
         filename = path.name
         tf_example = createTFRecord(label, path_in_str, filename)
         writer.write(tf_example.SerializeToString())
-
-        if counter % 10 == 0:
-            print("Percent done", (counter/len_pathlist)*100)
-        counter += 1
-
-    writer.close()
+        print(filename)
     return
 
 # Main -----------------------------------
-label = sys.argv[1]
-image_directory = sys.argv[2] 
-output_directory = sys.argv[3]
 
 
-if not os.path.exists(output_directory):
-    os.makedirs(output_directory)
 
-print("image_directory : ", image_directory )
-print("output_directory: ", output_directory)
+writer = tf.python_io.TFRecordWriter("/home/kun/ml/models/research/training/word_train.record")
+createTFRecords("/home/kun/Downloads/data/training/heading", "heading")
+createTFRecords("/home/kun/Downloads/data/training/paragraph", "paragraph")
+writer.close()
 
-createTFRecords(image_directory, label, output_directory)
+writer = tf.python_io.TFRecordWriter("/home/kun/ml/models/research/training/word_test.record")
+createTFRecords("/home/kun/Downloads/data/test/heading", "heading")
+createTFRecords("/home/kun/Downloads/data/test/paragraph", "paragraph")
+writer.close()
 
-print("Done. output folder : " + output_directory)
+# python createTFRecord.py paragraph  
+
