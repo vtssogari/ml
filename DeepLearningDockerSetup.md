@@ -6,11 +6,11 @@
    * Install Docker engine
    * Install NVIDIA Driver
       
-  ``` 
+``` 
       sudo apt-get nvidia-375 nvidia-modprobe, and then reboot the machine.
-  ```
+```
   * Run NVIDA Docker 
-  ```
+```
       # If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
       docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
       sudo apt-get purge -y nvidia-docker
@@ -27,6 +27,9 @@
 
       # Test nvidia-smi with the latest official CUDA image
       docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
-  ```
+```
     
 2. Install Tensorflow
+```
+nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu
+```
