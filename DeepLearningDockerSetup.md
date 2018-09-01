@@ -41,12 +41,18 @@ Go to your browser on http://localhost:8888/
 ```
 git clone https://github.com/tensorflow/models.git 
 cd ./models/research
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim 
 
 sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
 pip install --user Cython
 pip install --user contextlib2
 pip install --user jupyter
 pip install --user matplotlib
+
+wget -O protobuf.zip https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip
+unzip protobuf.zip
+./bin/protoc object_detection/protos/*.proto --python_out=.
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim 
+
+python object_detection/builders/model_builder_test.py
 
 ```
