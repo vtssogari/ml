@@ -83,6 +83,13 @@ TensorFlow
 │ └─ tutorials
 └─ workspace
    └─ training_demo
+      ├─ annotations
+      ├─ images
+      │ ├─ test
+      │ └─ train
+      ├─ pre-trained-model
+      ├─ training
+      └─ README.md   
 ```    
 
 6. Running the Training Job
