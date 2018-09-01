@@ -72,6 +72,17 @@ python object_detection/builders/model_builder_test.py
     -pipeline config file
     +train
     +eval
+    
+TensorFlow
+├─ addons
+│ └─ labelImg
+├─ models
+│ ├─ official
+│ ├─ research
+│ ├─ samples
+│ └─ tutorials
+└─ workspace
+   └─ training_demo
 ```    
 
 6. Running the Training Job
