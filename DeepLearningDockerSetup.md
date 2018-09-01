@@ -56,3 +56,19 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 python object_detection/builders/model_builder_test.py
 
 ```
+4. Custom Training object
+    * Build TFRecord Training set and Testing set
+    * Create Label Set
+    * 
+
+```
++data
+  -label_map file
+  -train TFRecord file
+  -eval TFRecord file
++models
+  + model
+    -pipeline config file
+    +train
+    +eval
+```    
