@@ -61,6 +61,7 @@ python object_detection/builders/model_builder_test.py
     * Create Label Set
     * 
 
+5. Choose Model and configure file
 ```
 +data
   -label_map file
@@ -72,3 +73,7 @@ python object_detection/builders/model_builder_test.py
     +train
     +eval
 ```    
+
+6. Running the Training Job
+
+7. Running Tensorboard
