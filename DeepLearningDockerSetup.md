@@ -5,7 +5,8 @@
 1. Install NVIDIA Docker
     * Install NVIDIA Driver
       
-      ``` docker run -it --name nvidia-driver --privileged --pid=host \
+      ``` 
+      docker run -it --name nvidia-driver --privileged --pid=host \
          -v /run/nvidia:/run/nvidia:shared nvidia/driver:396.37-ubuntu16.04
       ```
     * Install Docker engine 
