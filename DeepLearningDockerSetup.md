@@ -34,3 +34,19 @@
 nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu
 ```
 Go to your browser on http://localhost:8888/
+
+3. Install Object Detection API Library
+
+
+```
+git clone https://github.com/tensorflow/models.git 
+cd ./models/research
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim 
+
+sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
+pip install --user Cython
+pip install --user contextlib2
+pip install --user jupyter
+pip install --user matplotlib
+
+```
