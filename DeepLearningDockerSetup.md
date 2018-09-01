@@ -33,3 +33,4 @@
 ```
 nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:latest-gpu
 ```
+Go to your browser on http://localhost:8888/
