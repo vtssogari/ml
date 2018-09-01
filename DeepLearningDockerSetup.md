@@ -90,7 +90,7 @@ TensorFlow
       ├─ pre-trained-model
       ├─ training
       └─ README.md   
-```    
+```
 
     * annotations: This folder will be used to store all *.csv files and the respective TensorFlow *.record files, which contain the list of annotations for our dataset images.
     * images: This folder contains a copy of all the images in our dataset, as well as the respective *.xml files produced for each one, once labelImg is used to annotate objects.
@@ -100,12 +100,12 @@ TensorFlow
     * training: This folder will contain the training pipeline configuration file *.config, as well as a *.pbtxt label map file and all files generated during the training of our model.
     * README.md: This is an optional file which provides some general information regarding the training conditions of our model. It is not used by TensorFlow in any way, but it generally helps when you have a few training folders and/or you are revisiting a trained model after some time.
 
---move images to "images" folder
-create TFRecord
-create label_map.pbtxt and move to "training" folder
-select model configuration models/research/object_detection/samples/configs then copy to "training" folder
-configure the model 
-download pre-trained-model
+* move images to "images" folder
+* create TFRecord
+* create label_map.pbtxt and move to "training" folder
+* select model configuration models/research/object_detection/samples/configs then copy to "training" folder
+* configure the model 
+* download pre-trained-model
 
 6. Running the Training Job
 
