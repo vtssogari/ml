@@ -100,7 +100,7 @@ TensorFlow
     * training: This folder will contain the training pipeline configuration file *.config, as well as a *.pbtxt label map file and all files generated during the training of our model.
     * README.md: This is an optional file which provides some general information regarding the training conditions of our model. It is not used by TensorFlow in any way, but it generally helps when you have a few training folders and/or you are revisiting a trained model after some time.
 
-move images to "images" folder
+--move images to "images" folder
 create TFRecord
 create label_map.pbtxt and move to "training" folder
 select model configuration models/research/object_detection/samples/configs then copy to "training" folder
