@@ -107,50 +107,6 @@ TensorFlow
 * configure the model 
   ./models/research/object_detection/samples/configs
   
-    ssdlite_mobilenet_v2_coco.config
-    ssdlite_mobilenet_v1_coco.config
-    ssd_resnet50_v1_fpn_shared_box_predictor_640x640_coco14_sync.config
-    ssd_mobilenet_v2_coco.config
-    ssd_mobilenet_v1_quantized_300x300_coco14_sync.config
-    ssd_mobilenet_v1_ppn_shared_box_predictor_300x300_coco14_sync.config
-    ssd_mobilenet_v1_pets.config
-    ssd_mobilenet_v1_fpn_shared_box_predictor_640x640_coco14_sync.config
-    ssd_mobilenet_v1_focal_loss_pets.config
-    ssd_mobilenet_v1_coco.config
-    ssd_mobilenet_v1_300x300_coco14_sync.config
-    ssd_mobilenet_v1_0.75_depth_quantized_300x300_pets_sync.config
-    ssd_mobilenet_v1_0.75_depth_quantized_300x300_coco14_sync.config
-    ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync.config
-    ssd_inception_v3_pets.config
-    ssd_inception_v2_pets.config
-    ssd_inception_v2_coco.config
-    rfcn_resnet101_pets.config
-    rfcn_resnet101_coco.config
-    mask_rcnn_resnet50_atrous_coco.config
-    mask_rcnn_resnet101_pets.config
-    mask_rcnn_resnet101_atrous_coco.config
-    mask_rcnn_inception_v2_coco.config
-    mask_rcnn_inception_resnet_v2_atrous_coco.config
-    faster_rcnn_resnet50_pets.config
-    faster_rcnn_resnet50_coco.config
-    faster_rcnn_resnet152_pets.config
-    faster_rcnn_resnet152_coco.config
-    faster_rcnn_resnet101_voc07.config
-    faster_rcnn_resnet101_pets.config
-    faster_rcnn_resnet101_kitti.config
-    faster_rcnn_resnet101_coco.config
-    faster_rcnn_resnet101_ava_v2.1.config
-    faster_rcnn_resnet101_atrous_coco.config
-    faster_rcnn_nas_coco.config
-    faster_rcnn_inception_v2_pets.config
-    faster_rcnn_inception_v2_coco.config
-    faster_rcnn_inception_resnet_v2_atrous_pets.config
-    faster_rcnn_inception_resnet_v2_atrous_oid.config
-    faster_rcnn_inception_resnet_v2_atrous_cosine_lr_coco.config
-    faster_rcnn_inception_resnet_v2_atrous_coco.config
-    embedded_ssd_mobilenet_v1_coco.config
-    
-
 * download pre-trained-model
 *** COCO-trained models
 
