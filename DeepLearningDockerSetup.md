@@ -23,12 +23,13 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
   sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 sudo apt-get update
 
-      # Install nvidia-docker2 and reload the Docker daemon configuration
-      sudo apt-get install -y nvidia-docker2
-      sudo pkill -SIGHUP dockerd
+# Install nvidia-docker2 and reload the Docker daemon configuration
+sudo apt-get install -y nvidia-docker2
+sudo pkill -SIGHUP dockerd
 
-      # Test nvidia-smi with the latest official CUDA image
-      docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+# Test nvidia-smi with the latest official CUDA image
+docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
+
 ```
     
 2. Install Tensorflow
