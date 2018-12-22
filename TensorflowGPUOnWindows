@@ -2,8 +2,6 @@
 
 #installing 
 
-conda create --name tf_gpu
-activate tf_gpu
 conda install tensorflow-gpu
 
 
