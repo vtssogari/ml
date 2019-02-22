@@ -48,5 +48,12 @@ PubMed and PMC word vectors
 http://bio.nlplab.org
 http://evexdb.org/pmresources/vec-space-models/
 
+## visualize
+
+```
+print(spacy.displacy.render(doc, style="ent", jupyter=True, page="true"))
+```
+
+
 
 
