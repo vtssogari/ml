@@ -36,3 +36,4 @@ set PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 # start pyspark
 pyspark
 
+# Notebook sc and spark variable should be available
