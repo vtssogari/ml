@@ -9,7 +9,12 @@ export PATH=$SPARK_HOME/bin:$PATH
 ## Window
 set SPARK_HOME=C:\YourSparkHome
 
+set HADOOP_HOME=C:\YourHadoopHome
+
+* download the https://github.com/steveloughran/winutils/blob/master/hadoop-2.6.0/bin/winutils.exe?raw=true to bin folder
+
 set PATH=%PATH%;C:\YourSparkHome\bin
+
 
 ## python spark shell
 pyspark
@@ -26,3 +31,8 @@ export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 set PYSPARK_DRIVER_PYTHON=jupyter
 
 set PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+
+
+# start pyspark
+pyspark
+
