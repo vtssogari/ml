@@ -7,13 +7,14 @@
    * Install NVIDIA Driver
       
 ``` 
-sudo apt-get install -y nvidia-375 nvidia-modprobe # then reboot the machine.
+# purgin driver 
+# sudo apt --purge autoremove nvidia*
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install -y nvidia-driver-415
 
-or upgrade 
-sudo apt-get purge nvidia*
-sudo add-apt-repository ppa:graphics-drivers
-sudo apt-get update
-sudo apt-get install nvidia-415
+
+sudo apt-get install -y nvidia-375 nvidia-modprobe # then reboot the machine.
 
 ```
   * Run NVIDA Docker 
