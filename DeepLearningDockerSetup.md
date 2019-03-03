@@ -8,6 +8,13 @@
       
 ``` 
 sudo apt-get install -y nvidia-375 nvidia-modprobe # then reboot the machine.
+
+or upgrade 
+sudo apt-get purge nvidia*
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt-get update
+sudo apt-get install nvidia-415
+
 ```
   * Run NVIDA Docker 
 ```
